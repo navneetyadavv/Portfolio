@@ -1,0 +1,177 @@
+
+
+.background.open{
+  height: 300vh;
+  opacity: 0.85;
+}
+
+.menu{
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.05s;
+}
+.nav{
+  z-index: 4;
+  display: flex;
+  width: fit-content;
+  position: fixed;
+
+  justify-content: center;
+  height: 6vh;
+  padding: 2rem;
+  align-items: center;
+  gap: 5rem;
+  border-radius: 100px ;
+  transition: all 0.2s ease;
+
+}
+
+
+
+@media screen and (min-width: 700px){
+  .nav.active {
+    background: linear-gradient(
+      50deg,
+      rgba(57, 55, 50, 0.484) 12%,
+      rgba(20, 19, 19, 0.671) 77%
+    );
+    box-shadow: 0px 2px 29px 0 #f79c249f;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all .2s ease;
+  }
+  .ham{
+    display: none;
+  }
+  .background{
+ display: none;
+  }
+}
+
+.menu.open{
+  opacity: 1;;
+  visibility: visible;
+}
+
+.menu a{
+  color: white;
+  font-size: 20px;
+  /* padding:20px 0 20px 20px; */
+  text-decoration: none;
+  text-transform: capitalize;
+  /* opacity: 0; */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 4;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+    translate: 0 30px;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.appear{
+  animation: appear 0.35s backwards;
+}
+
+@media screen and (max-width: 700px){
+
+.background{
+  position: fixed;
+  z-index: 2;
+  top: 44px;
+  left: 44px;
+  aspect-ratio: 1 / 1;
+  translate: -50% -50%;
+  height: 88px;
+  background: #07030a;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.6s;
+}
+  .menu{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu.close{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav{
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+.menu nav:hover > a{
+  opacity: 0.25;
+}
+
+.menu nav > a:hover{
+  opacity: 1;
+}
+
+.menu.open a{
+  opacity: 1;
+  visibility: visible;
+  font-size: 25px;
+  font-weight: 500;
+
+}
+  
+.ham, .menu{
+  position: fixed;
+}
+
+}
+
+
+
