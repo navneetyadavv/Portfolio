@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import hackerImg from "../assets/hacker.png"
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <div className={styles.aboutContainer}>
         <div className={styles.aboutInnerContainer}>
           <div className={styles.aboutImageContainer}>
-            <img src="../public/hacker.png" alt="" />
+            <img src={hackerImg} alt="" />
           </div>
           <div className={styles.aboutDescContainer}>
             <div className={styles.aboutHeading}>About</div>

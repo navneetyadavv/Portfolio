@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
-
 import Starfield from "react-starfield";
 import { ReactTyped } from "react-typed";
+import heroImg from "../assets/nav.png"
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
         />
         {/* Other components */}
         <div className={styles.profileContainer}>
-          <img src="../public/nav.png" alt="" />
+          <img src={heroImg} alt="" />
         </div>
         <div className={styles.profileIntro}>
           <div className={styles.mainIntro}>
