@@ -22,16 +22,13 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
 }
 .root{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12rem;
-}
-
-*{
-  -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
 }
 
 input,
@@ -42,12 +39,27 @@ a{
   -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
 
 }
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+  color: inherit !important;
+}
 
 a:focus,
 a:visited,
 a:active{
   outline: none;
   color: inherit;
+}
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Ensure the color is inherited */
+}
+
+a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: inherit; /* Ensure the color is inherited on hover */
 }
 
 body{
