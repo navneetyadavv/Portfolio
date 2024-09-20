@@ -1,5 +1,4 @@
 import styles from "./Hero.module.css";
-import Starfield from "react-starfield";
 import { ReactTyped } from "react-typed";
 import heroImg from "../assets/nav.png"
 
