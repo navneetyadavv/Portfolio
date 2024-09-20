@@ -7,12 +7,7 @@ export default function Hero() {
   return (
     <>
       <div className={styles.heroContainer}>
-        <Starfield
-          starCount={1000}
-          starColor={[255, 255, 255]}
-          speedFactor={0.05}
-          // backgroundColor="black"
-        />
+      
         {/* Other components */}
         <div className={styles.profileContainer}>
           <img src={heroImg} alt="Profile" />

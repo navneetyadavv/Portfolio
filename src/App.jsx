@@ -8,6 +8,12 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
+     <Starfield
+          starCount={1000}
+          starColor={[255, 255, 255]}
+          speedFactor={0.05}
+          // backgroundColor="black"
+        />
       <Header></Header>
       <Hero></Hero>
       <About></About>
