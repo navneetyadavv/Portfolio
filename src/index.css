@@ -47,6 +47,7 @@ a:focus,
 a:visited,
 a:active{
   outline: none;
+  color: inherit;
 }
 
 body{

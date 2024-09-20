@@ -188,7 +188,7 @@
   .menu {
     top: 0;
     left: 0;
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -218,7 +218,7 @@
   .menu.open a {
     opacity: 1;
     visibility: visible;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
   }
   
