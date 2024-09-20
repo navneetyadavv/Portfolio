@@ -61,14 +61,16 @@ export default function Projects() {
                       <div className={styles.projectsDesc}>
                         <div className={styles.projectName}>{projectTitle}</div>
                         <div className={styles.projectDesc}>{desc}</div>
-                        <div className={styles.BtnsConatiner}>
+                        <div className={styles.btnsConatiner}>
                           <button className={styles.about_button}>Demo</button>
-
-                          <button className={styles.cta} type="submit">
+                          <button className={styles.cta}>
                             <span>Github</span>
                             <svg viewBox="0 0 13 10" height="10px" width="15px">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
+                              <path d="M1,5 L11,5" stroke="#ffffff"></path>
+                              <polyline
+                                points="8 1 12 5 8 9"
+                                stroke="#ffffff"
+                              ></polyline>
                             </svg>
                           </button>
                         </div>

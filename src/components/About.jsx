@@ -26,6 +26,7 @@ export default function About() {
                   <polyline points="8 1 12 5 8 9"></polyline>
                 </svg>
               </button>
+             
             </div>
           </div>
         </div>

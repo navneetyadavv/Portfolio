@@ -11,7 +11,7 @@
   height: 60vh;
   width: 100%;
   max-width: 1200px;
-  border: 0.1px solid rgb(146, 141, 141);
+  border: 1px solid rgba(146, 141, 141, 0.486);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.1px solid rgb(146, 141, 141);
+  border: 1px solid rgba(146, 141, 141, 0.486);
   flex: 1;
   border-radius: 12px;
   background: #161b22;
@@ -35,40 +35,44 @@
   height: 100%;
 }
 
+/* Description container */
 .aboutDescContainer {
   flex: 2;
   height: 100%;
-  border: 0.1px solid rgb(158, 152, 152);
+  border: 1px solid rgba(146, 141, 141, 0.486);
   border-radius: 12px;
   background: #161b22;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
 }
+
+/* About heading */
 .aboutHeading {
   font-size: 3rem;
   font-weight: 500;
   color: white;
-  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
+/* About description */
 .aboutDesc {
   font-size: 1.3rem;
   color: white;
   text-align: center;
   max-width: 80%;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
 }
-/* button */
 
+/* Button styles */
 .cta {
   cursor: pointer;
   position: relative;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  padding: 12px 18px;
+  padding: 12px 12px;
   transition: all 0.2s ease;
   border: none;
   background: none;
@@ -87,9 +91,10 @@
   transition: all 0.3s ease;
 }
 
+
 .cta span {
   position: relative;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -109,6 +114,7 @@
   transition: all 0.3s ease;
 }
 
+
 .cta:hover:before {
   width: 100%;
   background: #f79a24;
@@ -121,7 +127,12 @@
 .cta:active {
   transform: scale(0.95);
 }
-@media screen and (max-width: 950px) {
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 950px) {
   .aboutInnerContainer {
     flex-direction: column;
     height: 100%;
@@ -132,11 +143,64 @@
   }
   .aboutHeading {
     font-size: 2rem;
-    padding: 1rem;
   }
+  
   .aboutDesc {
     font-size: 1.1rem;
     max-width: 90%;
-    padding-bottom: 1.3rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .aboutHeading {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  
+  .aboutDesc {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+  
+  .cta span {
+    font-size: 16px;
+  }
+  
+  .cta svg {
+    width: 12px;
+    height: 8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .aboutContainer {
+    padding: 1rem;
+  }
+  
+  .aboutInnerContainer {
+    padding: 1rem;
+  }
+  
+  .aboutHeading {
+    font-size: 1.6rem;
+  }
+  
+  .aboutDesc {
+    font-size: 0.9rem;
+  }
+  
+  .cta {
+    padding: 10px 14px;
+  }
+  
+  .cta span {
+    font-size: 14px;
+  }
+  
+  .cta svg {
+    width: 10px;
+    height: 6px;
   }
 }

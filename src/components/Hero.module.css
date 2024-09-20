@@ -7,16 +7,19 @@
   align-items: center;
   margin-top: 0px;
 }
+
 .profileContainer {
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
   overflow: hidden;
 }
+
 .profileContainer img {
   width: inherit;
   height: inherit;
 }
+
 .profileIntro {
   display: flex;
   justify-content: center;
@@ -24,6 +27,7 @@
   flex-direction: column;
   padding: 1.3rem 1.5rem;
 }
+
 .mainIntro {
   color: #fff;
   font-size: 7rem;
@@ -31,24 +35,29 @@
   letter-spacing: -3px;
   text-align: center;
 }
+
 .descIntro {
   display: flex;
   position: relative;
 }
+
 .descIntro h1 {
   color: #fff;
   font-size: 2rem;
 }
+
 .desc {
   margin-top: 1rem;
-  max-width: 65%;
+  max-width: 90%;
   text-align: center;
 }
+
 .desc p {
   color: rgb(171, 165, 165);
   font-size: 1.2rem;
   font-weight: 400;
 }
+
 .star1 {
   position: absolute;
   color: #fff;
@@ -57,18 +66,24 @@
   right: -7%;
   top: -10%;
 }
+
 .yellowText {
   color: #f79a24;
 }
 
+/* Responsive Styles */
+
+/* Tablet View (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
   .profileContainer {
     width: 12rem;
     height: 12rem;
   }
+
   .mainIntro {
     font-size: 5rem;
   }
+
   .descIntro h1 {
     font-size: 1.5rem;
   }
@@ -77,11 +92,14 @@
     font-size: 1.1rem;
   }
 }
+
+/* Mobile View (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .profileContainer {
     width: 10rem;
     height: 10rem;
   }
+
   .heroContainer {
     height: 90vh;
   }
@@ -89,11 +107,36 @@
   .mainIntro {
     font-size: 3rem;
   }
+
   .descIntro h1 {
     font-size: 1rem;
   }
 
   .desc p {
     font-size: 1rem;
+  }
+}
+
+/* Small Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .profileContainer {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .heroContainer {
+    height: 100vh;
+  }
+
+  .mainIntro {
+    font-size: 2rem;
+  }
+
+  .descIntro h1 {
+    font-size: 0.9rem;
+  }
+
+  .desc p {
+    font-size: 0.9rem;
   }
 }

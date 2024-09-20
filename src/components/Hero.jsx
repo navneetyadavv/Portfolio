@@ -15,7 +15,7 @@ export default function Hero() {
         />
         {/* Other components */}
         <div className={styles.profileContainer}>
-          <img src={heroImg} alt="" />
+          <img src={heroImg} alt="Profile" />
         </div>
         <div className={styles.profileIntro}>
           <div className={styles.mainIntro}>
@@ -26,10 +26,10 @@ export default function Hero() {
               <span className={styles.yellowText}> I'm Into </span>
               <ReactTyped
                 strings={[
-                  "Web Development ",
-                  "Frontend Development ",
-                  "Backend Development ",
-                  "Full Stack Development ",
+                  "Web Development",
+                  "Frontend Development",
+                  "Backend Development",
+                  "Full Stack Development",
                 ]}
                 typeSpeed={100}
                 loop
@@ -50,4 +50,3 @@ export default function Hero() {
     </>
   );
 }
- 

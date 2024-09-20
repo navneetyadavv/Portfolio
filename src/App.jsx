@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
-import Timeline from "./components/Timeline";
+
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Projects></Projects>
-      <Timeline></Timeline>
       <Footer></Footer>
     </>
   );
