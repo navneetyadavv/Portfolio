@@ -83,7 +83,7 @@ border-radius: 12px;
 .projectName {
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .projectDesc {
@@ -233,7 +233,6 @@ border-radius: 12px;
     padding: 0 1rem;
   }
   .projectsItemContainer {
-  
     padding: 1rem 7px;
   
   }
@@ -251,11 +250,12 @@ border-radius: 12px;
   }
 
   .projectName {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 
   .projectDesc {
-    /* font-size: 0.95rem; */
+    font-size: 0.95rem;
     display: none;
   }
 
@@ -270,4 +270,15 @@ border-radius: 12px;
   .projectsImage {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonials {
+   margin-bottom: 2rem;
+    
+  }
+  .projectsHeadingContainer {
+    padding: 1.2rem 0;
+  }
+  
 }

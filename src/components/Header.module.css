@@ -25,10 +25,9 @@
   }
 }
 
-/* Other existing styles */
 .background.open {
   height: 300vh;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .menu {
