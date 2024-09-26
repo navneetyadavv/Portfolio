@@ -41,8 +41,8 @@
   color: #0077af;
 }
 
-.telegram:hover {
-  color: #31a8e0;
+.gmail:hover {
+  color: #EA4335;
 }
 
 .footerLink:hover {
@@ -51,9 +51,9 @@
 }
 
 .copyrights {
-  font-weight: 900;
+  font-weight: 600;
   color: #ffffff;
-  font-size: 1.3rem;
+  font-size: .9rem;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@
   }
 
   .copyrights {
-    font-size: 1.1rem;
+    font-size: .7rem;
   }
 }
 
@@ -79,6 +79,6 @@
   }
 
   .copyrights {
-    font-size: .7rem;
+    font-size: .5rem;
   }
 }

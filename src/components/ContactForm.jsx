@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form";
 import styles from "./ContactForm.module.css";
 import { IoClose } from "react-icons/io5";
 
-export default function ContactForm({ isVisible, onClose, isFormVisible }) {
-  console.log("isVisible:", isVisible);
+export default function ContactForm({ isContactFormVisible, onClose }) {
+  console.log("isVisible:", isContactFormVisible);
   //   console.log("close:", onclose);
   const { register, handleSubmit, setValue } = useForm();
 
@@ -19,7 +19,7 @@ export default function ContactForm({ isVisible, onClose, isFormVisible }) {
   return (
     <div
       className={`${styles.formContainer} ${
-        isFormVisible ? styles.visible : styles.formContainer
+        isContactFormVisible ? styles.visible : styles.formContainer
       }`}
     >
       <div className={styles.headerOfForm}>

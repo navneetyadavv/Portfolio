@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { FaInstagram, FaGithub, FaTelegram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -16,7 +17,7 @@ export default function Footer() {
           <FaInstagram className={`${styles.footerLink} ${styles.instagram}`} />
         </a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=navneetyadav49710@gmail.com&su=Hello%20there">
-          <FaTelegram className={`${styles.footerLink} ${styles.telegram}`} />
+          <SiGmail className={`${styles.footerLink} ${styles.gmail}`} />
         </a>
       </div>
       <div className={styles.copyrights}>

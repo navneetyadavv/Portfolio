@@ -1,4 +1,3 @@
-/* Apply the Sacramento font to the logo */
 .navLogo {
   font-family: "Sacramento", cursive;
   font-weight: 500;
@@ -9,19 +8,19 @@
 
 @media screen and (max-width: 700px) {
   .navLogo {
-    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    font-size: 1.5rem; 
   }
 }
 
 @media screen and (max-width: 500px) {
   .navLogo {
-    font-size: 1.2rem; /* Further adjust the font size for even smaller screens */
+    font-size: 1.2rem; 
   }
 }
 
 @media screen and (max-width: 400px) {
   .navLogo {
-    font-size: 1rem; /* Further adjust the font size for very small screens */
+    font-size: 1rem; 
   }
 }
 
@@ -154,7 +153,43 @@
   stroke-dashoffset: -138px;
 }
 
-/* Other existing styles */
+/* Add this to your CSS file */
+.navLinks a {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #f79a24;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.navLinks a:hover {
+  color: #f79a24;;
+}
+
+.navLinks a.active {
+  color: #f79a24;
+}
+
+.navLinks a.active::after {
+  width: 100%;
+  left: 0;
+  background: #f79a24;
+}
+
 
 @keyframes appear {
   0% {
@@ -206,13 +241,6 @@
     flex-direction: column;
   }
 
-  .menu nav:hover > a {
-    opacity: 0.25;
-  }
-
-  .menu nav > a:hover {
-    opacity: 1;
-  }
 
   .menu.open a {
     opacity: 1;

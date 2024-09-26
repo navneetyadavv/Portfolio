@@ -1,12 +1,18 @@
+import React, { useState, useEffect } from "react";
 import ContactForm from "./ContactForm";
 import styles from "./Header.module.css";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
-export default function Header() {
+export default function Header({
+  scrollToAbout,
+  scrollToProjects,
+  scrollToSkills,
+  scrollToContact,
+}) {
   const links = ["Home", "About", "Projects", "Skills", "Contact"];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(false);
+  const [isContactFormVisible, setIsContactFormVisible] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -29,9 +35,31 @@ export default function Header() {
   const isOpen = isMenuOpen ? styles.open : styles.close;
 
   const handleClick = (link) => {
-    console.log(`Navigating to ${link}`);
-    // Uncomment if you want to navigate
-    // navigate(`/${link.toLowerCase()}`);
+    setActiveLink(link);
+    setIsMenuOpen(false);
+
+    if (link === "Contact") {
+      setIsContactFormVisible(true);
+    } else {
+      setIsContactFormVisible(false);
+    }
+
+    switch (link) {
+      case "Home":
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        break;
+      case "About":
+        scrollToAbout();
+        break;
+      case "Projects":
+        scrollToProjects();
+        break;
+      case "Skills":
+        scrollToSkills();
+        break;
+      default:
+        break;
+    }
   };
 
   return (
@@ -74,7 +102,9 @@ export default function Header() {
             {links.map((link, index) => (
               <a
                 key={link}
-                className={isMenuOpen ? styles.appear : ""}
+                className={`${isMenuOpen ? styles.appear : ""} ${
+                  activeLink === link ? styles.active : ""
+                }`}
                 style={{
                   animationDelay: `0.${index + 1}s`,
                 }}
@@ -86,6 +116,10 @@ export default function Header() {
           </div>
         </nav>
       </div>
+      <ContactForm
+        isContactFormVisible={isContactFormVisible}
+        onClose={handleClick}
+      ></ContactForm>
     </>
   );
 }

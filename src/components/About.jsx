@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import hackerImg from "../assets/hacker.png"
+import hackerImg from "../assets/hacker.png";
 
 export default function About() {
   return (
@@ -12,11 +12,15 @@ export default function About() {
           <div className={styles.aboutDescContainer}>
             <div className={styles.aboutHeading}>About</div>
             <div className={styles.aboutDesc}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              neque aut, ducimus culpa quis modi ad sunt doloribus facilis
-              quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Nulla neque aut, ducimus culpa quis modi ad sunt doloribus facilis
-              quisquam.
+              I am Navneet Yadav, a dedicated full-stack developer with
+              expertise in building responsive, scalable applications. I
+              specialize in technologies like React.js, Node.js, and MongoDB,
+              crafting seamless front-end interfaces and robust back-end
+              solutions. With a strong foundation in JavaScript and experience
+              across various frameworks, I thrive in fast-paced environments and
+              enjoy solving complex challenges. I'm eager to collaborate
+              and contribute to innovative projects that drive real-world
+              solutions.
             </div>
             <div>
               <button className={styles.cta} type="submit">
@@ -26,7 +30,6 @@ export default function About() {
                   <polyline points="8 1 12 5 8 9"></polyline>
                 </svg>
               </button>
-             
             </div>
           </div>
         </div>
