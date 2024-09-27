@@ -6,6 +6,7 @@
   align-items: center;
   padding: 0 1rem;
 }
+
 .aboutInnerContainer {
   height: 60vh;
   width: 100%;
@@ -16,8 +17,9 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
+
 .aboutImageContainer {
   height: 100%;
   overflow: hidden;
@@ -90,10 +92,8 @@
   transition: all 0.3s ease;
 }
 
-
 .cta span {
   position: relative;
-  /* font-family: "Ubuntu", sans-serif; */
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -113,7 +113,6 @@
   transition: all 0.3s ease;
 }
 
-
 .cta:hover:before {
   width: 100%;
   background: #f79a24;
@@ -127,23 +126,22 @@
   transform: scale(0.95);
 }
 
-
-
-
 /* Mobile Styles */
 @media (max-width: 950px) {
   .aboutInnerContainer {
     flex-direction: column;
     height: 100%;
   }
+
   .aboutImageContainer {
     width: 100%;
     flex: 2;
   }
+
   .aboutHeading {
     font-size: 2rem;
   }
-  
+
   .aboutDesc {
     font-size: 1.1rem;
     max-width: 90%;
@@ -156,16 +154,16 @@
     font-size: 1.8rem;
     padding: 1rem;
   }
-  
+
   .aboutDesc {
     font-size: 1rem;
     max-width: 95%;
   }
-  
+
   .cta span {
     font-size: 16px;
   }
-  
+
   .cta svg {
     width: 12px;
     height: 8px;
@@ -174,8 +172,7 @@
 
 /* Small Mobile */
 @media (max-width: 480px) {
-
-  .abutContainer {
+  .aboutContainer {
     padding: 1rem;
     height: 80vh;
   }
@@ -183,19 +180,19 @@
   .aboutHeading {
     font-size: 1.6rem;
   }
-  
+
   .aboutDesc {
     font-size: 0.9rem;
   }
-  
+
   .cta {
     padding: 10px 14px;
   }
-  
+
   .cta span {
     font-size: 14px;
   }
-  
+
   .cta svg {
     width: 10px;
     height: 6px;

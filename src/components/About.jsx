@@ -17,8 +17,7 @@ export default function About() {
               specialize in technologies like React.js, Node.js, and MongoDB,
               crafting seamless front-end interfaces and robust back-end
               solutions. With a strong foundation in JavaScript and experience
-              across various frameworks, I thrive in fast-paced environments and
-              enjoy solving complex challenges. I'm eager to collaborate
+              across various frameworks. I'm eager to collaborate
               and contribute to innovative projects that drive real-world
               solutions.
             </div>
